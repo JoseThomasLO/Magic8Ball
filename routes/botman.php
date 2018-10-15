@@ -17,7 +17,7 @@ $botman->fallback(function($bot) {
 });
 
 //Resuelve las preguntas
-$botman->hears('{pregunta}?', function($bot) {
+$botman->hears('{pregunta}\?', function($bot, $pregunta) {
 
     $respuesta = rand(0, 19);  //Define si la respuesta es positiva, negativa o duda.
     if($respuesta <= 9) //Respuesta positiva
